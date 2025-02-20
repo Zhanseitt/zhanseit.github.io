@@ -1,0 +1,372 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.25s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+    transform: scale(1.1);
+}
+
+.hero {
+    background: rgb(57, 150, 150);
+    background-size: cover;
+    padding: 80px 20px;
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #e55a00;
+    transform: scale(1.05);
+}
+
+.catalog, .testimonials {
+    padding: 40px 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #e55a00;
+    transform: scale(1.1);
+}
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.review:hover {
+    transform: scale(1.1);
+}
+
+.review img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-right: 15px;
+}
+
+.review-text {
+    flex: 1;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#logotip {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.mainText {
+    font-size: 48px;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+.mainText2 {
+    font-size: 19px;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+.benefits {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f3f3f3;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+    transform: scale(1.05);
+}
+
+.benefit img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.scroll-to-top:hover {
+    background: #e55a00;
+    transform: scale(1.1);
+}
+
+.buttonTop {
+    position: absolute;
+    justify-content: center;
+    left: 675px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.buttonTop:hover {
+    background: #e55a00;
+    transform: scale(1.1);
+}
+
+#image2 {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+}
+
+.image3 {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+
+.hero2 {
+    background: #f3f3f3;
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.bottomText {
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.bottomText2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.bottomText3 {
+    margin-bottom: 98px;
+}
+
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: left;
+    border-top: 2px solid #ddd;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.contacts-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 90px;
+}
+
+.contacts-info {
+    font-size: 18px;
+    color: #333;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.contacts-info p {
+    margin: 5px 0;
+    margin-right: 140px;
+    line-height: 1.8;
+    max-width: 800px;
+    font-weight: 300;
+}
+
+.contacts-info a {
+    color: #a44e4e;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+}
+
+.contacts-info a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
